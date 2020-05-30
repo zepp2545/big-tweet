@@ -4,14 +4,14 @@ module ApplicationHelper
 
         if post.present?
             if post.id.present?
-                twitter_card[:url] = "https://[herokuアプリ名].herokuapp.com/posts/#{post.id}"
+                twitter_card[:url] = "https://bigtweetbang.herokuapp.com/posts/#{post.id}"
                 twitter_card[:image] = "https://s3-ap-northeast-1.amazonaws.com/big-tweet-konan/images/#{post.id}.png"
             else
-                twitter_card[:url] = 'https://[herokuアプリ名].herokuapp.com/'
+                twitter_card[:url] = 'https://bigtweetbang.herokuapp.com/'
                 twitter_card[:image] = "https://raw.githubusercontent.com/ysk1180/bigtutorial/master/app/assets/images/top.png"
             end
         else
-            twitter_card[:url] = 'https://[herokuアプリ名].herokuapp.com/'
+            twitter_card[:url] = 'https://bigtweetbang.herokuapp.com/'
             twitter_card[:image] = "https://raw.githubusercontent.com/ysk1180/bigtutorial/master/app/assets/images/top.png"
         end
 
