@@ -14,7 +14,6 @@ module ApplicationHelper
             twitter_card[:url] = 'https://bigtweetbang.herokuapp.com/'
             twitter_card[:image] = "https://raw.githubusercontent.com/ysk1180/bigtutorial/master/app/assets/images/top.png"
         end
-        twitter_card[:site] = "@zepp2545"
         twitter_card[:title] = "タイトル"
         twitter_card[:card] = 'summary_large_image'
         twitter_card[:description] = '説明文'
