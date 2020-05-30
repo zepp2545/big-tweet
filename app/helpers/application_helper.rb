@@ -1,7 +1,7 @@
 module ApplicationHelper
     
     def get_twitter_card_info(post)
-
+        twitter_card = {}
         if post.present?
             if post.id.present?
                 twitter_card[:url] = "https://bigtweetbang.herokuapp.com/posts/#{post.id}"
